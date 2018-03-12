@@ -1,11 +1,11 @@
 <?php
 header('Content-Type: application/json');
 
-$FOX_NUM = (int)file_get_contents('../script/script.js', NULL, NULL, 16, 3);
-$random_fox_index = rand(1, $FOX_NUM);
+$PUG_NUM = (int)file_get_contents('../script/script.js', NULL, NULL, 16, 3);
+$random_pug_index = rand(1, $PUG_NUM);
 
-$image_path = 'http://randomfox.ca/images/'.$random_fox_index.'.jpg';
-$link = 'http://randomfox.ca/?i='.$random_fox_index;
+$image_path = 'http://randompug.club/images/'.$random_pug_index.'.jpg';
+$link = 'http://randompug.club/?i='.$random_pug_index;
 $data = ['image' => $image_path, 'link' => $link];
 
 echo json_encode($data);

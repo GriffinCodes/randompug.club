@@ -1,4 +1,4 @@
-To add more foxes:
+To add more pugs:
 1) For the repository
 2) Check for repeates in /images
 3) Upload to /images following the name count and JPG only standard

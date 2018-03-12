@@ -1,4 +1,4 @@
-var IMAGE_NUM = 121; /* UPDATE IMAGE COUNT HERE */
+var IMAGE_NUM = 3; /* UPDATE IMAGE COUNT HERE */
 
 function getImage() {
 	var img = "images/";
@@ -8,7 +8,7 @@ function getImage() {
 }
 
 function getImageLink() {
-	var img = "http://randomfox.ca/images/";
+	var img = "http://randompug.club/images/";
 	var randomNum = Math.floor((Math.random() * IMAGE_NUM)+1);
 	img += randomNum + '.jpg';
 	return img;
