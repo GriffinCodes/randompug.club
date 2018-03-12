@@ -77,7 +77,7 @@ if (isset($_GET['i'])) {
 			<p>Submit more pugs at <a href="https://github.com/Pugabyte/randompug.club" target="_blank">GitHub</a>
 
 			<br /><br /><br />
-			<p>API is Available: <a href="http://randompug.club/floof">http://randompug.club/loaf</a></p>
+			<p>API is Available: <a href="http://randompug.club/loaf">http://randompug.club/loaf</a></p>
 
 		</div>
 
