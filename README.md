@@ -1,6 +1,13 @@
-To add more pugs:
-1) For the repository
-2) Check for repeates in /images
-3) Upload to /images following the name count and JPG only standard
-4) Edit /script/script.js, updating line 1: "var IMAGE_NUM = NEW_PICTURE_COUNT;"
-5) Create pull request
+# Random Pug Club
+
+### Contributions welcome!
+
+1. Fork the repository
+2. Add images to `images/` following the naming convention
+3. Create pull request
+
+### Contact
+
+[<img src="https://discordapp.com/api/guilds/132680070480396288/widget.png?style=banner3">](http://discord.bear-nation.net)
+
+or Griffin#2583
