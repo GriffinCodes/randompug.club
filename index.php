@@ -1,21 +1,22 @@
 <?php
-$PUG_NUM = (int)file_get_contents('script/script.js', NULL, NULL, 16, 3);
-if (isset($_GET['i'])) {
-	if (ctype_digit($_GET['i'])) {
-		$random_pug_index = $_GET['i'];
-	} else {
-		$random_pug_index = rand(1, $PUG_NUM);
-	}
-} else {
-	$random_pug_index = rand(1, $PUG_NUM);
+$files = glob("images/*");
+if ($files) {
+	$PUG_NUM = count($files);
 }
+
+if (!isset($_GET['i'])) {
+	$random_pug_index = rand(1, $PUG_NUM);
+} else if (ctype_digit($_GET['i'])) {
+	$random_pug_index = $_GET['i'];
+}
+
 ?>
 
 <html>
 	<head>
 		<title>RandomPugClub</title>
 		<meta charset="utf-8">
-		<meta type="author" content="xinitrc & pugabyte" />
+		<meta type="author" content="xinitrc & Pugabyte" />
 		<meta type="description" content="Displaying pictures of random pugs with every click!" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="theme-color" content="#FF6600" />

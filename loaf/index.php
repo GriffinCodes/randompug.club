@@ -1,7 +1,11 @@
 <?php
 header('Content-Type: application/json');
 
-$PUG_NUM = (int)file_get_contents('../script/script.js', NULL, NULL, 16, 3);
+$files = glob("images/*");
+if ($files) {
+	$PUG_NUM = count($files);
+}
+
 $random_pug_index = rand(1, $PUG_NUM);
 
 $image_path = 'http://randompug.club/images/'.$random_pug_index.'.jpg';
