@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
-$files = glob("images/*");
+$files = glob("../images/*");
 if ($files) {
 	$PUG_NUM = count($files);
 }
