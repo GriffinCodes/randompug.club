@@ -28,7 +28,13 @@ if (!isset($_GET['i'])) {
 		<meta property="og:url" content="http://randompug.club" />
 
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-		<script type="text/javascript" src="./script/script.js?v=1"></script>
+		<script>
+			$(document).ready(function () {
+				var panel_width = document.getElementById('sidebar').offsetWidth;
+				var image_width = document.getElementById('pug_full_link').offsetWidth;
+				document.getElementById('footer').style.width = panel_width + image_width;
+			});
+		</script>
 
 		<style type="text/css">
 			body {
@@ -36,6 +42,14 @@ if (!isset($_GET['i'])) {
 				padding:5px;
 				font-family: arial, verdana, tahoma;
 				font-size: 14px;
+			}
+
+			#footer {
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				width: 75%;
+				text-align: center;
 			}
 
 			#panel {
@@ -86,6 +100,8 @@ if (!isset($_GET['i'])) {
 			<img src="http://randompug.club/images/<?= $random_pug_index ?>.jpg" alt="" title="" style="visibility: hidden;" id="pug_img_link" />
 		</a>
 	</div>
-
+	<div id="footer">
+		<p>Made by: xinitrc &amp; Pugabyte</p>
+	</div>
 	</body>
 </html>
