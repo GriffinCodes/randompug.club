@@ -38,8 +38,8 @@ if (!isset($_GET['i'])) {
 
 		<style type="text/css">
 			body {
-				margin:0;
-				padding:5px;
+				margin: 0;
+				padding: 5px;
 				font-family: arial, verdana, tahoma;
 				font-size: 14px;
 			}
@@ -49,7 +49,7 @@ if (!isset($_GET['i'])) {
 				left: 0;
 				bottom: 0;
 				width: 75%;
-				text-align: center;
+				padding: 5px;
 			}
 
 			#panel {
@@ -59,9 +59,9 @@ if (!isset($_GET['i'])) {
 			}
 
 			#sidebar {
-				float:left;
-				width:200px;
-				padding:5px;
+				float: left;
+				width: 200px;
+				padding: 5px;
 			}
 
 			#pug_full_link {
@@ -102,6 +102,7 @@ if (!isset($_GET['i'])) {
 	</div>
 	<div id="footer">
 		<p>Made by: xinitrc &amp; Pugabyte</p>
+		<p>Also check out some <a href="http://randomfox.ca" target="_blank">random foxes!</a></p>
 	</div>
 	</body>
 </html>
